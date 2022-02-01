@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>    
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
+        <link rel="stylesheet" href="indkøbsliste.css">
+        <script defer src ="app.js"></script>
+        <title>Indkøbsliste</title>
+    </head>
+    <header>
+       <nav>
+            <ul class="nav__links">
+                <li><a href="index.html">Madplan</a></li>
+                <li><a href="indkøbsliste.html">Indkøbsliste</a></li>                                
+            </ul>
+       </nav>
+       <div class="lgbtn">
+        <a class="cta" href="login.html"><button>Login</button></a>
+       </div>
+    </header>
+    <body>              
+       <div class="all-tasks">
+           <h2 class="task-list-title">Mine lister</h2>
+           <ul class="task-list"data-lists> 
+              <!-- <li class="list-name 
+               active-list">Mad</li>
+               <li class="list-name">Gaver</li> -->              
+           </ul>
+           <form action=""data-new-list-form>
+            <input
+            type="text"
+            class="new list"
+            data-new-list-input
+            placeholder="Ny liste"
+            aria-label="new list name"/>
+            <button class="btn create"
+            aria-label="create new list">+</button>
+           </form>           
+       </div>
+       <div class="todo-list">
+           <div class="todo-header">
+               <h2 class="list-title">Mad</h2>
+               <p class="task-count">3 ting tilbage</p>
+           </div>
+           <div class="todo-body">
+               <div class="tasks">
+                   <div class="task">
+                    <input 
+                    type="checkbox"
+                    id="task-1"
+                    />
+                    <label for="task-1">
+                        <span class="custom-checkbox"></span>
+                        Rugbrød
+                    </label>  
+                   </div>
+                   <div class="task">
+                    <input 
+                    type="checkbox"
+                    id="task-2"
+                    />
+                    <label for="task-2">
+                        <span class="custom-checkbox"></span>
+                        Ketchup
+                    </label>  
+                   </div>
+                   <div class="task">
+                    <input 
+                    type="checkbox"
+                    id="task-3"
+                    />
+                    <label for="task-3">
+                        <span class="custom-checkbox"></span>
+                        Leverpostej
+                    </label>  
+                   </div>
+                                       
+               
+            
+                 
+            </div>
+               <div class="new-task-creator">
+                <form action="">
+                    <input
+                    type="text"
+                    class="new task"
+                    placeholder="Ny ting"
+                    aria-label="Ny ting"/>
+                    <button class="btn create"
+                    aria-label="create new task">+</button>
+                   </form>   
+               </div>
+               <div class="delete-stuff">
+                   <button class="btn delete">Fjern markerede ting</button>
+                   <button class="btn delete">Slet liste</button>
+               </div>
+           </div>           
+       </div>
+
+      </div>
+    </body>
+</html>
+
